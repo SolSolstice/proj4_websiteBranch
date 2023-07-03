@@ -6,5 +6,5 @@ by_Price = Blueprint('byPrice', __name__)
 
 
 @by_Price.route('/byPrice/')
-def home():
+def byPrice():
     return render_template("byPrice.html")
