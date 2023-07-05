@@ -8,12 +8,12 @@
     <meta charset= "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel ="stylesheet" type="text/css" href="style.css">
-
-
-
-    <script src="app.js"></script>
+    <script src="byRegion.js"></script>
     
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     <meta charset="UTF-8">
@@ -39,7 +39,7 @@
 
 
 
-    <title>Document</title>
+    <title>By Region</title>
 
 
 </head>
@@ -68,20 +68,69 @@
             <a class="nav-item nav-link" href="byRegion.html">Discover by Region</a>
             <a class="nav-item nav-link" href="contributors.html">Contributors</a>
 
-            <div class="menu" onclick="closeFunction(this);">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
-
-            
-          
-
           
         </div>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 align="center" class=>Find Wine by Region</h1>
+          <h2 align="center" class=>Search Our Database for Wines in a Specific Region!</h2>
+
+          <form id="region-form">
+
+            <!-- <label for="region-names">Select a Region</label>
+            <select name="regions" id="user-input">
+              <option value="Invalid">Select a Region</option>
+              <option value="US">United States</option>
+              <option value="US">Argentina</option>
+              <option value="US">Armenmia</option>
+              <option value="US">Australia</option>
+            </select> -->
+
+            <!-- ^ saving code for when we use drop-down menu for end-user input -->
+
+
+            <input class="form-control"
+            id="user-input"
+            placeholder="Enter Region Name">
+            
+            <button id="region-button" class="btn btn-secondary"> Find Wine!</button>
+
+          </form>
+    <table class="table" cellpadding="10">
+      <thead>
+        <tr>
+          <th scope="col">Wine Title</th>
+          <th scope="col">Winery Name</th>
+          <th scope="col">Province</th>
+          <th scope="col">Grape Varietal</th>
+          <th scope="col">Description</th>
+          
+        </tr>
+      </thead>
+
+      <tbody>
+        
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      </tbody>
+
+
+
+
+    </table>
+
+
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>          

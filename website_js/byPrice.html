@@ -39,7 +39,7 @@
 
 
 
-    <title>Document</title>
+    <title>By Price</title>
 
 
 </head>
@@ -68,12 +68,6 @@
             <a class="nav-item nav-link" href="byRegion.html">Discover by Region</a>
             <a class="nav-item nav-link" href="contributors.html">Contributors</a>
 
-            <div class="menu" onclick="closeFunction(this);">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-            
 
             
           
@@ -82,9 +76,42 @@
         </div>
       </div>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 align="center" class=> Find Wine by Price</h1>
+          <h2 align="center" class=> Specify your Desired Spending Range</h2>
+
+
+          <h1>Specify Range</h1>
+          <form id="price-form">
+          <label for="start">Min</label>
+          <input type="number" min="0" id="min_input" name="min">
+          <br>
+          <label for="end">Max</label>
+          <input type="number" id="max" name="max">
+         
+<!--  
+          <form id="price-form">
+            <input class="form-control"
+            id="min-val"
+            placeholder="Enter Min">
+            
+            <button id="price-button"> Search </button>  -->
+
+
+
+
+
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>          
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="byPrice.js"></script>
+      
 
 
 
