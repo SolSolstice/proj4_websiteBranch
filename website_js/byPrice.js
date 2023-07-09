@@ -37,12 +37,15 @@ function runEnter() {
     
     
      var budgetWines = wines.filter(wine => wine.price >= theFilter.dMin && wine.price <= theFilter.dMax);
-     var filteredVarietal = wines.filter(varietalPrice=>varietalPrice.variety.includes(varietal));
-     console.log(filteredVarietal);
+     var filteredVarietal = budgetWines.filter(varietalPrice=>varietalPrice.variety.includes(varietal));
+    //  console.log(filteredVarietal);
+     console.log(filteredVarietal.length);
     
 
      var output = _.sortBy(budgetWines,'price');
      var output2 = _.sortBy(filteredVarietal,'price');
+    console.log(output2);
+    console.log(output);
 
      for (var i = 0; i < budgetWines.length; i++);
 
@@ -60,18 +63,20 @@ function runEnter() {
                 "<td>" + (output2[i]['country'])+"</td>"+
                 "<td>" + (output2[i]['description'])+"</td>"+
                 "<td>" + (output2[i]['price'])+"</td>")};
-            // }} else if (country_mod.length > 0) {
+             } else if (filteredVarietal.length > 0) {
                 
-                // {d3.select("tbody").insert("tr").html(
-                //     "<td>" + (output[i]['title'])+"</td>"+
-                //     "<td>" + (output[i]['variety'])+"</td>"+
-                //     "<td>" + (output[i]['country'])+"</td>"+
-                //     "<td>" + (output[i]['description'])+"</td>"+
-                //     "<td>" + (output[i]['price'])+"</td>")
-                // }};
-                console.log(output2)
-                console.log(output);
- }}});
+                {d3.select("tbody").insert("tr").html(
+                    "<td>" + (output[i]['title'])+"</td>"+
+                    "<td>" + (output[i]['variety'])+"</td>"+
+                    "<td>" + (output[i]['country'])+"</td>"+
+                    "<td>" + (output[i]['description'])+"</td>"+
+                    "<td>" + (output[i]['price'])+"</td>")}
+            };
+                   
+ }
+
+});
+
 //  });
         //  {d3.select("tbody").insert("tr").html(
         //      "<td>" + (output[i]['title'])+"</td>"+
