@@ -11,6 +11,8 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <link rel ="stylesheet" type="text/css" href="style.css">
     <script src="RqualityPredictor.js"></script>
+    <!-- <script src="../static/model.onnx"></script> -->
+
 
 
 
@@ -47,6 +49,12 @@
 </head>
 
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>  
+  
+
+
+  </script>
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button
@@ -63,8 +71,9 @@
       <div class="navbar-nav">
         
         <a class="nav-item nav-link" href="home.html">Home</a>
-        <a class="nav-item nav-link" href="RqualityPredictor.html"> Red Wine Quality Predictor</a>
-        <a class="nav-item nav-link" href="WqualityPredictor.html"> White Wine Quality Predictor</a>
+        <a class="nav-item nav-link" href="RqualityPredictor.html">Red Quality Predictor</a>
+        <a class="nav-item nav-link" href="WqualityPredictor.html">White Quality Predictor</a>
+        <a class="nav-item nav-link" href="byPrice.html">By Price Predictor</a>
         <a class="nav-item nav-link" href="byRegion.html">###1</a>
         <a class="nav-item nav-link" href="contributors.html">Contributors</a>
         </div>
@@ -76,7 +85,7 @@
           <div class="col-md-12">
             <h1 align="center" class=>Set Quality Determiners</h1>
   
-            <form id="red-quality-form">
+            <form id="quality-form">
   
               <h3>Specify pH Range</h3>
               <label for="min">Min</label>
@@ -164,11 +173,11 @@
               <br>
               <br>
 
+        
 
 
 
-
-              <button id ="price-button"
+              <button id ="quality-button"
                class="btn btn-secondary"
                > Search </button>
               
@@ -215,7 +224,8 @@
   
   
       <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>          
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>  
+      <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>        
   
   
   

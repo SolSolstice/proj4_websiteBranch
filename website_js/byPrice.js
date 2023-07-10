@@ -29,7 +29,9 @@ function runEnter() {
      // need to add $ sign to user input to match csv format 
      var dMin = "$" + min;
      var dMax = "$" + max;
+     console.log(dMin);
 
+    console.log(dMax);
     var theFilter = {
         dMin,
         dMax
